@@ -1,0 +1,73 @@
+#toolBar img {
+    float: right;
+    padding: 12px 20px;
+}
+li.meLi {
+    height: 50px;
+    border-bottom: 1px solid #f0f0f0;
+    background: #fff;
+}
+.meLi img {
+    position: relative;
+    top: 10px;
+    float: left;
+    padding: 0 30px;
+}
+h5.me {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 50px;
+    float: left;
+}
+#userName {
+    height: 90px;
+}
+#userName h6 {
+    font-size: 15px;
+    font-weight: normal;
+    position: relative;
+    top: 55px;
+    left: -50px;
+    color: #a7a7a7;
+}
+#userName img {
+    top: 20px;
+    width: 53px;
+    height: 53px;
+    margin-left: -5px;
+}
+#userName h5 {
+    line-height: 90px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    height: 90px;
+}
+li.gap {
+    line-height: 25px;
+    width: 480px;
+    height: 25px;
+    text-indent: 20px;
+    color: #868686;
+    background: #ebebeb;
+}
+#bottomBar {
+    position: absolute;
+    bottom: 0;
+    width: 480px;
+    height: 55px;
+    border-top: 1px solid #f0f0f0;
+    background: #fff;
+}
+#bottomBar a {
+    float: left;
+    width: 40px;
+    margin: 3px 40px;
+    text-decoration: none;
+}
+#bottomBar p {
+    font-size: 12px;
+    width: 40px;
+    text-align: center;
+    color: #bababa;
+}

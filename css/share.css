@@ -1,0 +1,28 @@
+#wrap {
+    position: relative;
+    width: 480px;
+    height: 720px;
+    margin: 0 auto;
+    background: #ebebeb;
+}
+#statusBar {
+    width: 480px;
+    height: 25px;
+    background: #000;
+}
+#toolBar {
+    width: 480px;
+    height: 50px;
+    background: #212a2a;
+}
+#toolBar h3 {
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 50px;
+    display: inline;
+    margin-left: 20px;
+    color: #fff;
+}
+a {
+    color: #000;
+}

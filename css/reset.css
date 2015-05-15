@@ -1,0 +1,16 @@
+body, div, h1, h3, h4, h5, h6, ul, li, p, img{
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+body {
+    background: #ddd;
+}
+input {
+    border: 0;
+}
+a {
+    text-decoration: none;
+}

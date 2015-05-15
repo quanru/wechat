@@ -1,0 +1,51 @@
+#wrap {
+    background: #fff;
+}
+img#gobackBtn {
+    float: left;
+    margin: 12px 12px 12px 20px;
+}
+img#searchIcon {
+    padding: 12px 5px 5px 0;
+    border-bottom: 2px solid #4f8643;
+}
+#inputSearch {
+    font-size: 23px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    width: 295px;
+    height: 30px;
+    color: #474b4a;
+    border-bottom: 2px solid #4f8643;
+    background: #212a2a;
+}
+img#voiceBtn {
+    position: relative;
+    left: -10px;
+    float: right;
+    padding: 12px 20px 5px 20px;
+    border-bottom: 2px solid #4f8643;
+}
+#tip h3 {
+    font-weight: normal;
+    margin-top: 80px;
+    text-align: center;
+    color: #a9a9a9;
+}
+#tipIcons {
+    width: 480px;
+    height: 65px;
+    margin-left: 90px;
+}
+#tipIcons a {
+    float: left;
+    width: 45px;
+    margin: 30px 15px;
+}
+#tipIcons p {
+    font-size: 12px;
+    width: 40px;
+    text-align: center;
+    color: #bababa;
+}

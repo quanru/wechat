@@ -1,0 +1,108 @@
+#wrap {
+    background: #fff;
+}
+#toolBar img {
+    float: right;
+    padding: 12px 20px;
+}
+li.fixLi {
+    height: 55px;
+    margin: 9px 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+h5.user {
+    font-size: 20px;
+    font-weight: normal;
+    position: relative;
+    top: -14px;
+    display: inline;
+    height: 55px;
+}
+li.nav {
+    line-height: 25px;
+    width: 480px;
+    height: 25px;
+    text-indent: 20px;
+    color: #868686;
+    background: #ebebeb;
+}
+li.friends, li.friend {
+    height: 55px;
+    padding: 15px 15px 0 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+li.friends img, li.friend img {
+    width: 42px;
+    height: 42px;
+}
+#a-z {
+    font-size: 17px;
+    position: absolute;
+    z-index: 2;
+    top: 80px;
+    right: 0;
+    width: 30px;
+    text-align: center;
+    background: #fff;
+}
+#a-z li {
+    width: 20px;
+    height: 20px;
+}
+#contacts {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 590px;
+}
+#bottomBar {
+    position: absolute;
+    bottom: 0;
+    width: 480px;
+    height: 55px;
+    border-top: 1px solid #f0f0f0;
+}
+#bottomBar a {
+    float: left;
+    width: 40px;
+    margin: 3px 40px;
+    text-decoration: none;
+}
+#bottomBar p {
+    font-size: 12px;
+    width: 40px;
+    text-align: center;
+    color: #bababa;
+}
+#shade {
+    position: absolute;
+    bottom: 0;
+    display: none;
+    width: 480px;
+    height: 720px;
+    background: rgba(0, 0, 0, .5);
+}
+#popMenu {
+    position: absolute;
+    top: 345px;
+    left: 65px;
+    display: none;
+    width: 350px;
+    height: 130px;
+    background: #fff;
+    box-shadow: 2px 2px 10px #909090;
+}
+#popMenu h1 {
+    font-size: 27px;
+    line-height: 70px;
+    height: 70px;
+    padding: 0 25px;
+    color: #5ca942;
+    border-bottom: 2px solid #eee;
+}
+#popMenu li {
+    font-size: 20px;
+    line-height: 50px;
+    height: 50px;
+    text-indent: 25px;
+    border-bottom: 1px solid #eee;
+}

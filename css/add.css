@@ -1,0 +1,70 @@
+#wrap {
+    background: #ebebeb;
+}
+#gobackBtn {
+    float: left;
+    margin: 12px 0 12px 20px;
+}
+#toolBar h4 {
+    font-weight: normal;
+    line-height: 50px;
+    margin-left: 20px;
+    color: #fff;
+}
+#xdpy {
+    font-size: 22px;
+    float: left;
+}
+#tjpy {
+    font-size: 20px;
+    float: right;
+    margin-right: 20px;
+}
+#searchBox {
+    position: relative;
+    top: 15px;
+    height: 50px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+#searchBox img {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+}
+#inputSearch {
+    font-size: 25px;
+    position: absolute;
+    bottom: 5px;
+    left: 60px;
+    height: 30px;
+    color: #c5c5c5;
+}
+#addBox {
+    position: relative;
+    top: 15px;
+    width: 480px;
+    height: 100px;
+    background: #fff;
+}
+#addBox a {
+    position: relative;
+    top: 20px;
+    float: left;
+    width: 240px;
+}
+#addBox img {
+    margin-left: 70px;
+}
+#addBox p {
+    font-size: 12px;
+    width: 180px;
+    text-align: center;
+    color: #bababa;
+}
+h6 {
+    font-weight: normal;
+    position: relative;
+    top: 30px;
+    color: #878787;
+}

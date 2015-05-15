@@ -1,0 +1,116 @@
+#wrap {
+    background: #ebebeb;
+}
+#gobackBtn {
+    float: left;
+    margin: 12px 0 12px 20px;
+}
+#toolBar h4 {
+    font-weight: normal;
+    line-height: 50px;
+    display: inline;
+    margin-left: 20px;
+    color: #fff;
+}
+#menuBtn {
+    float: right;
+    margin: 10px 20px;
+}
+#personList {
+    margin-bottom: 40px;
+}
+li.user {
+    height: 50px;
+    border-bottom: 1px solid #f0f0f0;
+    background: #fff;
+}
+.user img {
+    position: relative;
+    top: 10px;
+    float: left;
+    padding: 0 10px;
+}
+h5.person {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 50px;
+    float: left;
+}
+#userBox {
+    position: relative;
+    height: 110px;
+}
+#userBox h4, h6 {
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 3px;
+    color: #a7a7a7;
+}
+#userBox h4 {
+    position: absolute;
+    top: 50px;
+    left: 90px;
+}
+#userBox h6 {
+    position: absolute;
+    top: 70px;
+    left: 90px;
+}
+#userBox img {
+    top: 20px;
+    width: 70px;
+    height: 70px;
+}
+#userBox h5 {
+    line-height: 90px;
+    position: relative;
+    top: -15px;
+    height: 90px;
+}
+#personList h5 {
+    font-size: 18px;
+    text-indent: 20px;
+}
+#personList h5 span {
+    position: absolute;
+    left: 100px;
+}
+#personAlbum {
+    height: 100px;
+}
+#personAlbum h5 {
+    line-height: 100px;
+}
+#personTag span {
+    color: #596d90;
+}
+#personSNS span img {
+    padding-top: 3px;
+}
+#sendBtn, #visionChat {
+    line-height: 55px;
+    width: 430px;
+    height: 55px;
+    margin: 20px 25px;
+    text-align: center;
+    border-radius: 3px;
+}
+#sendBtn {
+    color: #fff;
+    background: #45c018;
+}
+#visionChat {
+    background: #fff;
+}
+#shade {
+    position: absolute;
+    bottom: 0;
+    display: none;
+    width: 480px;
+    height: 720px;
+    background: #000;
+}
+#shade img {
+    position: absolute;
+    top: 150px;
+}

@@ -1,0 +1,117 @@
+#toolBar img {
+    float: right;
+    padding: 12px 20px;
+}
+#wrap {
+    background: #fff;
+}
+#subBar {
+    width: 480px;
+    height: 55px;
+    background: #F5F5F5;
+}
+#subBar h6 {
+    font-size: 17px;
+    line-height: 55px;
+    display: inline;
+    color: #dfdfdf;
+}
+#pc {
+    float: left;
+    margin: 14px 30px;
+}
+#ring {
+    float: right;
+    margin: 17px 10px;
+}
+#chatLists li {
+    position: relative;
+    height: 55px;
+    padding: 5px 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+#chatLists img {
+    width: 53px;
+    height: 53px;
+}
+h5.user {
+    font-size: 20px;
+    font-weight: normal;
+    position: relative;
+    top: -32px;
+    display: inline;
+}
+p.date {
+    font-size: 12px;
+    float: right;
+    margin: 10px;
+    color: #bebebe;
+}
+p.preview {
+    font-size: 15px;
+    position: relative;
+    top: -25px;
+    left: 60px;
+    color: #bfbfbf;
+}
+#bottomBar {
+    position: absolute;
+    bottom: 0;
+    width: 480px;
+    height: 55px;
+    border-top: 1px solid #f0f0f0;
+}
+#bottomBar a {
+    float: left;
+    width: 40px;
+    margin: 3px 40px;
+}
+#bottomBar p {
+    font-size: 12px;
+    width: 40px;
+    text-align: center;
+    color: #bababa;
+}
+#shade {
+    position: absolute;
+    bottom: 0;
+    display: none;
+    width: 480px;
+    height: 720px;
+    background: rgba(0, 0, 0, .5);
+}
+#popMenu {
+    position: absolute;
+    top: 250px;
+    left: 65px;
+    display: none;
+    width: 350px;
+    height: 230px;
+    background: #fff;
+    box-shadow: 2px 2px 10px #909090;
+}
+#popMenu h1 {
+    font-size: 27px;
+    line-height: 70px;
+    height: 70px;
+    padding: 0 25px;
+    color: #5ca942;
+    border-bottom: 2px solid #eee;
+}
+#popMenu li {
+    font-size: 20px;
+    line-height: 50px;
+    height: 50px;
+    text-indent: 25px;
+    border-bottom: 1px solid #eee;
+}
+.setTop {
+    background: #f4ffef;
+}
+.unreadTag {
+    position: absolute;
+    top: 1px;
+    left: 58px;
+    width: 20px;
+    height: 20px;
+}
