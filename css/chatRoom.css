@@ -17,6 +17,30 @@
     padding: 12px 20px 5px 20px;
     cursor: pointer;
 }
+#words li{
+    background: #B1E866;
+    width: 200px;
+    line-height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    position: relative;
+    margin-left: 170px;
+    margin-top: 20px;
+    border: 1px solid #7FB140;
+}
+.tri{
+    position: absolute;
+    width: 8px;
+    right: -8px;
+    top: 15px;
+}
+.headIcon{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: -60px;
+}
 #bottomBar {
     position: absolute;
     bottom: 0;
@@ -25,22 +49,28 @@
     border-top: 1px solid #f0f0f0;
     background: #fff;
 }
-#bottomBar h2 {
-    font-size: 20px;
-    font-weight: normal;
-    line-height: 55px;
-    display: inline;
-    width: 300px;
+#bottomBar input {
+    font-size: 23px;
     margin-left: 60px;
-    padding: 7px 130px;
-    border: 1px solid #969696;
-    border-radius: 5px;
+    margin-top: 15px;
+    width: 330px;
+    height: 30px;
+    color: #474b4a;
+    outline: medium;
+    border-bottom: 2px solid #4f8643;
 }
-#keyboard {
+#voiceBtn {
     position: absolute;
     bottom: 1px;
     left: 3px;
     float: left;
+}
+#biaoqing{
+    padding-bottom: 6px;
+    padding-right: 10px;
+    border-bottom: 2px solid #4f8643;
+    position: relative;
+    left: -10px;
 }
 #gengduo {
     position: absolute;

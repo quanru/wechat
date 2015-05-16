@@ -1,5 +1,6 @@
 #wrap {
     background: #fff;
+    overflow: hidden;
 }
 #gobackBtn {
     float: left;
@@ -16,17 +17,28 @@
     float: right;
     margin: 10px 20px;
 }
-#personList {
-    margin-bottom: 40px;
+#friendNews{
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 645px;
+    position: absolute;
+}
+#spinner{
+    display: none;
+    margin-left: 20px;
+}
+#friendNews li{
+    border-top: 2px solid #eee;
+    padding-top: 15px;
 }
 #userBox {
     height: 80px;
     width: 80px;
     background: #fff;
     border: 1px solid #F7F7F7;
-    position: absolute;
-    right: 10px;
-    top: 330px;
+    position: relative;
+    left: 380px;
+    top: -50px;
 }
 #userBox img {
     width: 70px;
@@ -36,23 +48,13 @@
 #userBox h5 {
     width: 40px;
     position: absolute;
-    right: 100px;
-    top: 0;
+    right: 85px;
+    top: 15px;
     color: #fff;
-}
-#friendNews{
-    overflow: scroll;
-    overflow-x: hidden;
-    height: 335px;
-}
-#friendNews li{
-    border-top: 2px solid #eee;
-    padding-top: 15px;
 }
 .user{
     width: 480px;
     height: 300px;
-    margin-top: 50px;
     position: relative;
 }
 .user h5{
@@ -74,7 +76,7 @@
     left: 85px;
     top: 80px;
 }
-#headImg{
+.headImg{
     float: left;
     width: 50px;
     height: 50px;
@@ -89,7 +91,8 @@
     height: 720px;
     background: #000;
 }
-#shade img {
+#zoomImg {
     position: absolute;
     top: 150px;
+    left: 0;
 }

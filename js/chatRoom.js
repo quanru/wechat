@@ -7,4 +7,5 @@ $(function  () {
 		var url = "person.html?userName=" + encodeURIComponent(userName) + "&imgSrc=" + encodeURIComponent('.' + imgSrc) ; 
 		window.location = url;
 	});
+	$("#bottomBar input").focus();
 });
