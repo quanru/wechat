@@ -29,23 +29,3 @@ li.gap {
     color: #868686;
     background: #ebebeb;
 }
-#bottomBar {
-    position: absolute;
-    bottom: 0;
-    width: 480px;
-    height: 55px;
-    border-top: 1px solid #f0f0f0;
-    background: #fff;
-}
-#bottomBar a {
-    float: left;
-    width: 40px;
-    margin: 3px 40px;
-    text-decoration: none;
-}
-#bottomBar p {
-    font-size: 12px;
-    width: 40px;
-    text-align: center;
-    color: #bababa;
-}

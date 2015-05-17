@@ -1,17 +1,24 @@
-#wrap {
-    position: relative;
+body{
     width: 480px;
-    height: 720px;
     margin: 0 auto;
+}
+#wrap {
+    position: absolute;
+    width: 480px;
+    bottom: 0;
+    top: 0;
     background: #ebebeb;
+    overflow: hidden;
+}
+#main{
+    height: 100%;
 }
 #statusBar {
-    width: 480px;
+
     height: 25px;
     background: #000;
 }
 #toolBar {
-    width: 480px;
     height: 50px;
     background: #212a2a;
 }
@@ -25,4 +32,23 @@
 }
 a {
     color: #000;
+}
+#bottomBar {
+    position: absolute;
+    bottom: 0;
+    height: 55px;
+    border-top: 1px solid #f0f0f0;
+    background: #fff;
+    width: 480px;
+}
+#bottomBar a {
+    display: block;
+    float: left;
+    padding: 3px 40px;
+}
+#bottomBar p {
+    font-size: 12px;
+    width: 40px;
+    text-align: center;
+    color: #bababa;
 }

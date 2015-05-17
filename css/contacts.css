@@ -38,10 +38,9 @@ li.friends img, li.friend img {
 #a-z {
     font-size: 17px;
     position: absolute;
-    z-index: 2;
     top: 80px;
-    right: 0;
-    width: 30px;
+    right: 5px;
+    height: 100%;
     text-align: center;
     background: #fff;
 }
@@ -52,33 +51,15 @@ li.friends img, li.friend img {
 #contacts {
     overflow: scroll;
     overflow-x: hidden;
-    height: 590px;
-}
-#bottomBar {
+    height: 80%;
     position: absolute;
-    bottom: 0;
-    width: 480px;
-    height: 55px;
-    border-top: 1px solid #f0f0f0;
-}
-#bottomBar a {
-    float: left;
-    width: 40px;
-    margin: 3px 40px;
-    text-decoration: none;
-}
-#bottomBar p {
-    font-size: 12px;
-    width: 40px;
-    text-align: center;
-    color: #bababa;
 }
 #shade {
     position: absolute;
     bottom: 0;
     display: none;
     width: 480px;
-    height: 720px;
+    height: 100%;
     background: rgba(0, 0, 0, .5);
 }
 #popMenu {

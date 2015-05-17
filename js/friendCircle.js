@@ -1,25 +1,32 @@
 $(function(){
-    var dragging = false;
-    var iX, iY;
+    var isClick = false, //判断是否单击
+            isMove = false;//判断单击后是否移动
+    var iY;//标记单击时鼠标纵坐标位置
     var updateNum = 3;
-    $("#friendNews").mousedown(function(e) {
-        dragging = true;
-        iY = e.clientY - this.offsetTop;
+    $("#friendNews").bind("mousedown touchstart",function(e) {
+        isClick = true;
+        iY = (e.pageY || e.originalEvent.targetTouches[0].pageY)  - this.offsetTop;
         return false;
     });
-    document.onmousemove = function(e) {
-        if (dragging) {
-        e = e || window.event;
-        var oY = e.clientY - iY;
-        $("#friendNews").css("marginTop", oY - 75 + "px");
-        $("#spinner").css("display", "block");
-        return false;
+    $("#friendNews").bind("mousemove touchmove", function(e) {
+        if (isClick) {
+            isMove = true;
+            e = e || window.event;
+            var oY = (e.pageY || e.originalEvent.targetTouches[0].pageY) - iY -75;//标记移动后容器所处在的纵坐标，减去75是顶栏加状态栏的宽度
+            $("#friendNews").css("marginTop", oY  + "px");
+            $("#spinner").css("display", "block");
+            if(oY-75 > 30){
+                $("#spinner").css("marginTop", 30 + "px");
+            }
+            else{
+                $("#spinner").css("marginTop", oY + "px");
+            }
         }
-    };
-    $(document).mouseup(function(e) {
-        if (dragging) {
+    });
+    $("#friendNews").bind("mouseup touchend", function(e) {
+        if (isClick && isMove) {//如果点击后并且移动了，则生成新状态
             $("#friendNews").animate({"marginTop":"0"});
-            $("#spinner").css("display", "none");
+            $("#spinner").fadeOut("slow");
             var newUpdate;
             if(updateNum%2 === 0)
                 newUpdate = $("#update1").clone();
@@ -29,14 +36,19 @@ $(function(){
             updateNum++;
             newUpdate.prependTo($("#friendUpdate"));
         }
-        dragging = false;
-        e.cancelBubble = true;
+        isClick = false;
+        isMove = false;
     });
-    $(".newsImg").bind("click", zoomIn);
+    $("#friendUpdate").bind("click", zoomIn);
+    $("#friendUpdate").bind("mousedown touchstart", function  (e) {
+        e.stopPropagation();
+    });
     $("#shade, #zoomImg").bind("click", getOut);//点击背景退出菜单
 });
 function zoomIn (event) {
     var srcEle = event.target;
+    if(srcEle.className != "newsImg")
+        return;
     var img = $(srcEle).clone();
     img.appendTo($("#shade"));
     img.attr('id', 'zoomImg');

@@ -29,6 +29,9 @@
     margin-top: 20px;
     border: 1px solid #7FB140;
 }
+#words p{
+    display: inline;
+}
 .tri{
     position: absolute;
     width: 8px;
@@ -39,9 +42,10 @@
     width: 45px;
     height: 45px;
     position: absolute;
+    top: 0px;
     right: -60px;
 }
-#bottomBar {
+#inputBar {
     position: absolute;
     bottom: 0;
     width: 480px;
@@ -49,7 +53,7 @@
     border-top: 1px solid #f0f0f0;
     background: #fff;
 }
-#bottomBar input {
+#inputBar input {
     font-size: 23px;
     margin-left: 60px;
     margin-top: 15px;
@@ -66,7 +70,7 @@
     float: left;
 }
 #biaoqing{
-    padding-bottom: 6px;
+    padding-bottom: 7px;
     padding-right: 10px;
     border-bottom: 2px solid #4f8643;
     position: relative;
@@ -78,7 +82,7 @@
     bottom: 2px;
     float: right;
 }
-#bottomBar p {
+#inputBar p {
     font-size: 12px;
     width: 40px;
     text-align: center;

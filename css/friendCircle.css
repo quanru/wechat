@@ -1,6 +1,5 @@
 #wrap {
-    background: #fff;
-    overflow: hidden;
+    background: #000;
 }
 #gobackBtn {
     float: left;
@@ -20,12 +19,15 @@
 #friendNews{
     overflow: scroll;
     overflow-x: hidden;
-    height: 645px;
+    height: 100%;
     position: absolute;
+    background: #fff;
 }
 #spinner{
     display: none;
     margin-left: 20px;
+    position: absolute;
+    z-index: 2;
 }
 #friendNews li{
     border-top: 2px solid #eee;
@@ -88,7 +90,7 @@
     bottom: 0;
     display: none;
     width: 480px;
-    height: 720px;
+    height: 100%;
     background: #000;
 }
 #zoomImg {

@@ -107,7 +107,7 @@ h5.person {
     bottom: 0;
     display: none;
     width: 480px;
-    height: 720px;
+    height: 100%;
     background: #000;
 }
 #shade img {
