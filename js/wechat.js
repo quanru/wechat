@@ -24,6 +24,7 @@ function longClickChat (event) {
 		srcEle.remove();
 		$("#popMenu").fadeOut("slow");
 		$("#shade").fadeOut("slow");
+		srcEle.style.backgroundColor = "#fff";
 	});//删除聊天
 	$("#setTop").bind("click", function  () {
 		srcEle.style.backgroundColor = "#D6D6D6";
@@ -31,6 +32,7 @@ function longClickChat (event) {
 		$(srcEle).addClass("setTop");
 		$("#popMenu").fadeOut("slow");
 		$("#shade").fadeOut("slow");
+		srcEle.style.backgroundColor = "#fff";
 	});//置顶聊天
 	$("#unread").bind("click", function  () {
 		srcEle.style.backgroundColor = "#D6D6D6";
@@ -42,6 +44,7 @@ function longClickChat (event) {
 		}).appendTo($(srcEle));
 		$("#popMenu").fadeOut("slow");
 		$("#shade").fadeOut("slow");
+		srcEle.style.backgroundColor = "#fff";
 	});//标为未读
 }
 function getOut (event) {
