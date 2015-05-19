@@ -1,37 +1,46 @@
 var srcEle;//保存被长按的元素
 function wechat () {
+	$("#toolBar, #slideMenu").bind("mousedown", backgroundColor1);//点击添加与搜索按钮后变色
+	$("#toolBar, #slideMenu").bind("mouseup", function  () {//颜色还原
+	     event.target.style.backgroundColor = "#212A2A";
+	});
+	$("#addBtn").bind("click", function  () {//点击右上角菜单
+		$("#slideMenu").slideToggle("slow");
+	});
+	$("#addFriends").bind("click", function  () {//跳转到添加好友页面
+		window.location = "newFriends.html";
+	});
 	$("#chatLists").bind("mousedown touchstart", longClickChat);//长按列表弹出菜单
 	$("#shade").bind("click", getOut);//点击背景退出菜单
 	$("#chatLists").bind("click", enterChat);//单击进入聊天窗口
-	$("#addBtn").bind("click", clickDown);
-	$("#searchBtn").bind("click", clickDown);
-	$("#delChat").bind("click", function  (event) {
-		srcEle.style.backgroundColor = "#D6D6D6";
+	$("#delChat, #setTop, #unread").bind("mousedown",backgroundColor2);
+	$("#delChat").bind("click", function  (event) {//删除聊天
 		srcEle.remove();
-		$("#popMenu").fadeOut("slow");
-		$("#shade").fadeOut("slow");
-		srcEle.style.backgroundColor = "#fff";
-	});//删除聊天
-	$("#setTop").bind("click", function  () {
-		srcEle.style.backgroundColor = "#D6D6D6";
+		$("#popMenu").fadeOut("slow");//菜单
+		$("#shade").fadeOut("slow");//背景图层
+		srcEle.style.backgroundColor = "#fff";//恢复背景色
+		this.style.backgroundColor = "#fff";//恢复背景色
+	});
+	$("#setTop").bind("click", function  () {//置顶聊天
 		$(srcEle.parentElement).prepend(srcEle);
 		$(srcEle).addClass("setTop");
-		$("#popMenu").fadeOut("slow");
-		$("#shade").fadeOut("slow");
-		srcEle.style.backgroundColor = "#F4FFEF";
-	});//置顶聊天
-	$("#unread").bind("click", function  () {
-		srcEle.style.backgroundColor = "#D6D6D6";
+		$("#popMenu").fadeOut("slow");//弹出菜单
+		$("#shade").fadeOut("slow");//背景图层
+		srcEle.style.backgroundColor = "#F4FFEF";//设置置顶背景色
+		this.style.backgroundColor = "#fff";//恢复背景色
+	});
+	$("#unread").bind("click", function  () {//标为未读
 		$('<img >', {
 			class:'unreadTag',
 			src:'./img/jiaobiao.jpg',
 			width:'1em',
 			height:'1em'
 		}).appendTo($(srcEle));
-		$("#popMenu").fadeOut("slow");
-		$("#shade").fadeOut("slow");
-		srcEle.style.backgroundColor = "#fff";
-	});//标为未读
+		$("#popMenu").fadeOut("slow");//弹出菜单
+		$("#shade").fadeOut("slow");//背景图层
+		srcEle.style.backgroundColor = "#fff";//恢复背景色
+		this.style.backgroundColor = "#fff";//恢复背景色
+	});
 }
 function longClickChat (event) {
 	srcEle = event.target;

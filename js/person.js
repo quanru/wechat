@@ -1,7 +1,18 @@
 var search = window.location.search.split('&');
 var userName = decodeURIComponent(search[0].substring(10));
 var imgSrc = decodeURIComponent(search[1].substring(7));
+
 $(function  () {
+	$("#gobackBtn, #menuBtn").bind("mousedown", backgroundColor1);//点返回加与个人资料按钮后变色
+	$("#menuBtn").bind("mouseup", function  () {
+		this.style.backgroundColor = "#212A2A";
+	});
+	$("#gobackBtn").bind("click", function  (e) {//返回按钮
+		history.go(-1);
+	});
+	var search = window.location.search.split('&');
+	var userName = decodeURIComponent(search[0].substring(10));
+	var imgSrc = decodeURIComponent(search[1].substring(7));
 	$("#userName").html(userName);
 	$("#userBox img").attr('src', imgSrc);
 	$("#userBox img").bind("click", zoomIn);
@@ -9,6 +20,7 @@ $(function  () {
 	$("#sendBtn").bind("click", sendMessage);//点击发消息按钮
 	$("#visionChat").bind("click", visionChat);//点击视频聊天
 	$("#menuBtn").bind("click", slideMenu);//点击右上角菜单
+	$("#personAlbum").bind("click", enterAlbum);//进入相册
 });
 
 function zoomIn (event) {
@@ -46,4 +58,8 @@ function visionChat (event) {
 function slideMenu (event) {
 	$("#slideMenu ul li:last-child img").attr("src", imgSrc);
 	$("#slideMenu").slideToggle("slow");
+}
+function enterAlbum (e) {
+	e.target.style.backgroundColor = "#D6D6D6";
+	window.location = "album.html";
 }

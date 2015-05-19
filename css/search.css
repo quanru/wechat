@@ -1,11 +1,11 @@
 #wrap {
     background: #fff;
 }
-img#gobackBtn {
+#gobackBtn {
     float: left;
-    margin: 12px 12px 12px 20px;
+    padding: 12px 12px 13px 20px;
 }
-img#searchIcon {
+#searchIcon {
     padding: 12px 5px 5px 0;
     border-bottom: 2px solid #4f8643;
 }
@@ -21,7 +21,7 @@ img#searchIcon {
     outline: medium;
     background: #212a2a;
 }
-img#voiceBtn {
+#voiceBtn {
     position: relative;
     left: -10px;
     float: right;

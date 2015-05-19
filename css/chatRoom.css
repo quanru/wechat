@@ -5,16 +5,16 @@
     font-weight: normal;
     line-height: 50px;
     display: inline;
-    margin-left: 20px;
+    margin-left: 8px;
     color: #fff;
 }
 #gobackBtn {
     float: left;
-    margin: 12px 12px 12px 20px;
+    padding: 12px 12px 13px 20px;
 }
 #personBtn {
     float: right;
-    padding: 12px 20px 5px 20px;
+    padding: 12px 20px 13px 20px;
     cursor: pointer;
 }
 #words li{

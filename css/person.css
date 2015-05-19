@@ -3,7 +3,7 @@
 }
 #gobackBtn {
     float: left;
-    margin: 12px 0 12px 20px;
+    padding: 12px 12px 13px 20px;
 }
 #toolBar h4 {
     font-weight: normal;
@@ -14,7 +14,7 @@
 }
 #menuBtn {
     float: right;
-    margin: 10px 20px;
+    padding: 10px 20px 15px 20px;
 }
 #personList {
     margin-bottom: 40px;
@@ -80,6 +80,10 @@ h5.person {
 }
 #personAlbum h5 {
     line-height: 100px;
+}
+#personAlbum img{
+    height: 80px;
+    width: 80px;
 }
 #personTag span {
     color: #596d90;

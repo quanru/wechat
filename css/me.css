@@ -1,6 +1,6 @@
 #toolBar img {
     float: right;
-    padding: 12px 20px;
+    padding: 10px 20px 15px 20px;
 }
 li.meLi {
     height: 50px;
@@ -51,4 +51,22 @@ li.gap {
     text-indent: 20px;
     color: #868686;
     background: #ebebeb;
+}
+#slideMenu{
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    background: #21292B;
+    box-shadow: 15px 15px 15px #eee;
+    color: #fff;
+    display: none;
+}
+#slideMenu ul li{
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+}
+#slideMenu ul li img{
+    padding: 10px 15px;
+    float: left;
 }

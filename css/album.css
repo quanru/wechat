@@ -16,18 +16,12 @@
     float: right;
     padding: 10px 20px 15px 20px;
 }
-#friendNews{
+#myAlbum{
     overflow: scroll;
     overflow-x: hidden;
     height: 100%;
     position: absolute;
     background: #fff;
-}
-#spinner{
-    display: none;
-    margin-left: 20px;
-    position: absolute;
-    z-index: 2;
 }
 #userBox {
     position: relative;
@@ -48,40 +42,38 @@
     font-size: 20px;
     font-weight: normal;
 }
-#friendUpdate li{
-    border-bottom: 2px solid #eee;
+#myAlbum li{
     padding-top: 15px;
+    margin-left: 20px;
     width: 480px;
-    height: 300px;
-    position: relative;
+    height: 100px;
 }
-#friendUpdate li h5{
+#myAlbum li:last-child{
+    height: 50px;
+}
+#myAlbum li h5{
     color: #59698B;
     font-size: 20px;
     font-weight: normal;
     float: left;
     line-height: 30px;
 }
-#friendUpdate li p{
-    position: absolute;
-    top: 45px;
-    left: 85px;
-}
-#friendUpdate li:last-child{
-    height: 55px;
-}
-.newsImg{
-    position: absolute;
-    width: 180px;
-    height: 180px;
-    left: 85px;
-    top: 80px;
-}
-.headImg{
+.date{
     float: left;
-    width: 50px;
-    height: 50px;
-    margin-left: 25px;
+    width: 85px;
+}
+.day{
+    font-size: 35px;
+    display: inline;
+}
+.month{
+    font-size: 15px;
+    display: inline;
+}
+.photo{
+    float: left;
+    width: 80px;
+    height: 80px;
     margin-right: 10px;
 }
 #shade {

@@ -10,9 +10,6 @@ body{
     background: #ebebeb;
     overflow: hidden;
 }
-#main{
-    height: 100%;
-}
 #statusBar {
 
     height: 25px;
