@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/share.css">
+	<link rel="stylesheet" type="text/css" href="./css/scan2D.css">
+	<script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/util.js"></script>
+	<script type="text/javascript" src="./js/scan2D.js"></script>
+	<meta charset="UTF-8">
+	<title>wechat</title>
+</head>
+<body>
+	<div id="wrap">
+		<div id="statusBar">
+			<div id="whatTime"></div>
+			<div id="wireless"></div>
+			<div id="battery"></div>
+		</div>
+		<div id="main">
+			<div id="toolBar">
+				<img id="gobackBtn" src="./img/goback.jpg">
+				<h4>二维码/条码</h4>
+				<img id="menuBtn" src="./img/menu
+				.jpg">
+			</div>
+			<div id="middleFrame">
+				<div id="scanFrame">
+					<img id="tl" src="./img/topLeft.jpg" alt="">
+					<img id="tr" src="./img/topRight.jpg" alt="">
+					<img id="scrollBar" src="./img/scroll.jpg" alt="" >
+					<img id="bl" src="./img/bottomLeft.jpg" alt="">
+					<img id="br" src="./img/bottomRight.jpg" alt="">
+				</div>
+				<h2>将二维码/条码放入框内，即可自动扫描</h2>
+			</div>
+		</div>
+		<div id="botBar">
+			<div>
+				<img id="2Dcode" src="./img/2Dcode2.jpg" alt="二维码/条码" tip="将二维码/条码放入框内，即可自动扫描">
+				<p>二维码</p>
+			</div >
+			<div>
+				<img id="cover" src="./img/cover.jpg" alt="封面/电影海报" tip="将书、CD、电影海报放入框内，即可自动扫描">
+				<p>封面</p>
+			</div>
+			<div>
+				<img id="street" src="./img/street.jpg" alt="街景" tip="扫一下周围环境，寻找附近街景">
+				<p>街景</p>
+			</div>
+			<div>
+				<img id="translate" alt="翻译" src="./img/translate.jpg" tip="将英文单词放入框内">
+				<p>翻译</p>
+			</div>
+		</div>
+		<div id="slideMenu">
+			<ul>
+				<li id="newGroupChat">将扫一扫添加到桌面</li>
+				<li id="addFriends">从相册选取二维码</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

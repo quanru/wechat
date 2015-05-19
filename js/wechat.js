@@ -15,7 +15,8 @@ function wechat () {
 	$("#chatLists").bind("click", enterChat);//单击进入聊天窗口
 	$("#delChat, #setTop, #unread").bind("mousedown",backgroundColor2);
 	$("#delChat").bind("click", function  (event) {//删除聊天
-		srcEle.remove();
+
+		$(srcEle).remove();
 		$("#popMenu").fadeOut("slow");//菜单
 		$("#shade").fadeOut("slow");//背景图层
 		srcEle.style.backgroundColor = "#fff";//恢复背景色

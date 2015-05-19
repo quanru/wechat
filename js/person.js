@@ -56,7 +56,7 @@ function visionChat (event) {
 	$("#popMenu").fadeIn("slow");
 }
 function slideMenu (event) {
-	$("#slideMenu ul li:last-child img").attr("src", imgSrc);
+	$("#slideMenu li:last-child img").attr("src", imgSrc);
 	$("#slideMenu").slideToggle("slow");
 }
 function enterAlbum (e) {
