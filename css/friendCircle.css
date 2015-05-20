@@ -68,7 +68,7 @@
     left: 85px;
 }
 #friendUpdate li:last-child{
-    height: 55px;
+    margin-bottom: 55px;
 }
 .newsImg{
     position: absolute;

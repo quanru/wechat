@@ -19,11 +19,11 @@ h5.me {
     line-height: 50px;
     float: left;
 }
-#userName {
+#personality {
     height: 90px;
     cursor: pointer;
 }
-#userName h6 {
+#personality h6 {
     font-size: 15px;
     font-weight: normal;
     position: relative;
@@ -31,13 +31,13 @@ h5.me {
     left: -50px;
     color: #a7a7a7;
 }
-#userName img {
+#personality img {
     top: 20px;
     width: 53px;
     height: 53px;
     margin-left: -5px;
 }
-#userName h5 {
+#personality h5 {
     line-height: 90px;
     position: relative;
     top: -10px;

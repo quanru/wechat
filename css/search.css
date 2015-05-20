@@ -6,24 +6,22 @@
     padding: 12px 12px 13px 20px;
 }
 #searchIcon {
+    float: left;
     padding: 12px 5px 5px 0;
     border-bottom: 2px solid #4f8643;
 }
 #inputSearch {
-    font-size: 23px;
-    position: relative;
-    top: -11px;
-    left: -10px;
+    float: left;
+    font-size: 20px;
+    height: 42px;
+    line-height: 55px;
     width: 295px;
-    height: 30px;
     color: #474b4a;
     border-bottom: 2px solid #4f8643;
     outline: medium;
     background: #212a2a;
 }
 #voiceBtn {
-    position: relative;
-    left: -10px;
     float: right;
     padding: 12px 20px 5px 20px;
     border-bottom: 2px solid #4f8643;

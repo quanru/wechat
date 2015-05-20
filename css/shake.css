@@ -36,6 +36,8 @@
 #botBar div:last-child p {
     width: 50px;
 }
+#middleFrame{
+}
 #shakeImg{
     margin: 30% auto 0 auto;
     display: block;

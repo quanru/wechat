@@ -43,7 +43,7 @@
 #scanFrame{
     width: 220px;
     height: 200px;
-    margin: 30% auto 0 auto;
+    margin: 20% auto 0 auto;
     position: relative;
     background: #A3A69B;
 }
@@ -75,7 +75,7 @@
     color: #fff;
     display: none;
 }
-#slideMenu ul li{
+#slideMenu li{
     width: 220px;
     height: 50px;
     line-height: 50px;

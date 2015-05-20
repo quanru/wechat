@@ -1,11 +1,7 @@
 $(function(){
     $("#gobackBtn, #cameraBtn").bind("mousedown", backgroundColor1);//点返回加与个人资料按钮后变色
-    $("#gobackBtn, #cameraBtn").bind("mouseup", function  () {
-        this.style.backgroundColor = "#212A2A";
-    });
-    $("#gobackBtn").bind("click", function  (e) {//返回按钮
-        history.go(-1);
-    });
+    $("#gobackBtn, #cameraBtn").bind("mouseup", "#212A2A", backgroundColor2);//还原颜色
+    $("#gobackBtn").bind("click", goBack);//返回按钮
     var isClick = false, //判断是否单击
             isMove = false,//判断单击后是否移动
             Y;//标记单击时鼠标纵坐标位置
@@ -46,33 +42,9 @@ $(function(){
         isClick = false;
         isMove = false;
     });
-    $("#friendUpdate").bind("click", zoomIn);
+    $("#friendUpdate").bind("click", zoomIn);//点击放大图片
     $("#friendUpdate").bind("mousedown touchstart", function  (e) {
         e.stopPropagation();
     });
-    $("#shade, #zoomImg").bind("click", getOut);//点击背景退出菜单
+    $("#shade, #zoomImg").bind("click", zoomOut);//点击缩小图片
 });
-function zoomIn (event) {
-    var srcEle = event.target;
-    if(srcEle.className != "newsImg")
-        return;
-    var img = $(srcEle).clone();
-    img.appendTo($("#shade"));
-    img.attr('id', 'zoomImg');
-    img.animate({
-        width:'480px',
-        height:'480px'
-    });
-    $("#shade").css("display", "block");
-}
-function getOut (event) {
-    var img = $("#zoomImg");
-    img.animate({
-        width:'0',
-        height:'0'
-    });
-    $("#shade").fadeOut("slow");
-    setTimeout(function  () {
-        img.remove();
-    }, 1000);
-}

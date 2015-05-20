@@ -55,32 +55,27 @@
 }
 #inputBar input {
     font-size: 23px;
-    margin-left: 60px;
-    margin-top: 15px;
-    width: 330px;
+    padding-top: 15px;
+    padding-left: 5px;
+    width: 320px;
     height: 30px;
     color: #474b4a;
     outline: medium;
     border-bottom: 2px solid #4f8643;
-}
-#voiceBtn {
-    position: absolute;
-    bottom: 1px;
-    left: 3px;
     float: left;
 }
-#biaoqing{
-    padding-bottom: 7px;
-    padding-right: 10px;
-    border-bottom: 2px solid #4f8643;
-    position: relative;
-    left: -10px;
+#voiceBtn{
+    float: left;
+    padding: 10px;
 }
-#gengduo {
-    position: absolute;
-    right: 3px;
-    bottom: 2px;
+#biaoqing{
+    padding: 15px 10px 0 0;
+    border-bottom: 2px solid #4f8643;
     float: right;
+}
+#gengduo{
+    float: right;
+    padding: 10px;
 }
 #inputBar p {
     font-size: 12px;

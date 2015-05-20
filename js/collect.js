@@ -1,9 +1,9 @@
 $(function  () {
-	$("#gobackBtn, #searchBtn, #addBtn").bind("mousedown", backgroundColor1);//点返回加与个人资料按钮后变色
-	$("#gobackBtn, #cameraBtn").bind("mouseup", function  () {
-	    this.style.backgroundColor = "#212A2A";
+	$("#toolBar, #slideMenu").bind("mousedown", backgroundColor1);//点击添加与搜索按钮后变色
+	$("#toolBar, #slideMenu").bind("mouseup", "#212A2A", backgroundColor2);//还原颜色
+	$("#gobackBtn").bind("click", goBack);//返回按钮
+	$("#searchBtn").bind("click", function  () {//跳转到添加好友页面
+		window.location = "search.html";
 	});
-	$("#gobackBtn").bind("click", function  (e) {//返回按钮
-	    history.go(-1);
-	});
+	$("#addBtn").bind("click", slideMenu); //点击右上角菜单
 });

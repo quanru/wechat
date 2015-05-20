@@ -37,14 +37,16 @@ a {
     background: #fff;
     width: 480px;
 }
-#bottomBar a {
+#bottomBar div {
     display: block;
     float: left;
-    padding: 3px 40px;
+    padding: 3px 0;
 }
 #bottomBar p {
     font-size: 12px;
-    width: 40px;
     text-align: center;
     color: #bababa;
+}
+#bottomBar img{
+    padding: 0 40px;
 }

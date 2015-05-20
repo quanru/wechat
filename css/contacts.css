@@ -3,9 +3,10 @@
 }
 #toolBar img {
     float: right;
-    padding: 10px 20px 15px 20px;
+    padding: 10px 20px 15px 20px;、
+    
 }
-li.fixLi {
+.fixLi {
     padding: 9px 15px;
     border-bottom: 1px solid #f0f0f0;
 }
@@ -45,7 +46,7 @@ li.friends img, li.friend img {
     width: 20px;
     height: 20px;
 }
-#contacts {
+#contactsList {
     overflow: scroll;
     overflow-x: hidden;
     height: 80%;
@@ -55,7 +56,7 @@ li.friends img, li.friend img {
     position: absolute;
     bottom: 0;
     display: none;
-    width: 480px;
+    width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, .5);
 }

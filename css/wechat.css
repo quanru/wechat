@@ -1,9 +1,9 @@
+#wrap {
+    background: #fff;
+}
 #toolBar img {
     float: right;
     padding: 10px 20px 15px 20px;
-}
-#wrap {
-    background: #fff;
 }
 #subBar {
     height: 55px;
@@ -23,13 +23,13 @@
     float: right;
     margin: 17px 10px;
 }
-#chatLists li {
+#chatList li {
     position: relative;
     height: 55px;
     padding: 5px 15px;
     border-bottom: 1px solid #f0f0f0;
 }
-#chatLists img {
+#chatList img {
     width: 53px;
     height: 53px;
 }
