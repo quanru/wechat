@@ -3,8 +3,8 @@ var userName = decodeURIComponent(search[0].substring(10));
 var imgSrc = decodeURIComponent(search[1].substring(7));
 
 $(function  () {
-	$("#gobackBtn, #menuBtn").bind("mousedown", backgroundColor1);//点返回加与个人资料按钮后变色
-	$("#menuBtn").bind("mouseup", "#212A2A", backgroundColor2);//颜色还原
+	$("#gobackBtn, #menuBtn, #slideMenu").bind("mousedown", backgroundColor1);//点返回加与个人资料按钮后变色
+	$("#menuBtn, #slideMenu").bind("mouseup", "#212A2A", backgroundColor2);//颜色还原
 	$("#gobackBtn").bind("click", goBack);//返回按钮
 	var search = window.location.search.split('&');
 	var userName = decodeURIComponent(search[0].substring(10));

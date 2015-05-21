@@ -13,14 +13,14 @@ function backgroundColor2 (event) {//设置背景色为event.data
 	if(src.className == "nav"){
 		return;
 	}
-	if(src.parentElement.nodeName == "LI"){
+	if(src.parentElement.nodeName == "LI" || src.className == "unChange"){
 		src.parentElement.style.backgroundColor = event.data;
 	}
 	else{
 		src.style.backgroundColor = event.data;
 	}
 }
-function goBack (e) {//返回按钮
+function goBack (event) {//返回按钮
 	window.history.go(-1);
 }
 function longClick (event) {//长按弹出菜单
@@ -35,7 +35,10 @@ function longClick (event) {//长按弹出菜单
 		$("#popMenu").fadeIn("slow");
 		$("#shade").fadeIn("slow");
 		srcEle.style.backgroundColor = "#fff";
+		$("#contactsList").unbind("click");//解决Firefox下长按后会单击进入聊天窗口，原因是contactsList可滚动，此为折衷方案
+		clearTimeout(timeout);
 	}, 1000);
+	$("#contactsList").bind("click", enterPerson);//单击进入聊天窗口，重新注册事件
 }
 function getOut (event) {//退出长按菜单
 	var srcEle = event.target;
@@ -45,7 +48,6 @@ function getOut (event) {//退出长按菜单
 	$("#shade").fadeOut("slow");
 }
 function enterChat (event) {//进入聊天页面
-	clearTimeout(timeout);
 	var srcEle = event.target;
 	if( srcEle.nodeName != "LI" )
 		srcEle = srcEle.parentElement;
@@ -64,8 +66,9 @@ function enterPerson (event) {//进入个人资料卡页面
 }
 function zoomIn (event) {//放大图片
     var srcEle = event.target;
-    if(srcEle.className != "photo" && srcEle.className != "newsImg" && srcEle.className != "headImg")
-        return;
+    if(!$(srcEle).hasClass('zoomAble')){//如果该图片为不可放大的类，则返回
+    	return;
+    }
     var img = $(srcEle).clone();
     img.appendTo($("#shade"));
     img.attr('id', 'zoomImg');
@@ -95,12 +98,12 @@ function visionChat (event) {//点击视频聊天
 	$("#shade").fadeIn("slow");
 	$("#popMenu").fadeIn("slow");
 }
-function enterAlbum (e) {//进入相册
-	e.target.style.backgroundColor = "#D6D6D6";
+function enterAlbum (event) {//进入相册
+	this.style.backgroundColor = "#D6D6D6";
 	window.location = "album.html";
 }
-function changeShake (e) {//切换摇一摇目标
-	var src = e.target,
+function changeShake (event) {//切换摇一摇目标
+	var src = event.target,
 		srcParent = $("#botBar img");
 	if(src.nodeName != "IMG"){
 		return;
@@ -124,8 +127,8 @@ function turnOff (event) {//购物页面关闭按钮
 	$("#shade").fadeIn("slow");
 	$("#popMenu").fadeIn("slow");
 }
-function bottomHref  (e) {//底栏导航
-		var src = e.target;
+function bottomHref  (event) {//底栏导航
+		var src = event.target;
 		if( src.id == "wechat" || src.parentElement.id == "wechat"){//跳转到微信页面
 			window.location = "wechat.html";
 		}
@@ -139,8 +142,8 @@ function bottomHref  (e) {//底栏导航
 			window.location = "me.html";
 		}
 }
-function meHref  (e) {//'我'页面导航
-		var src = e.target;
+function meHref  (event) {//'我'页面导航
+		var src = event.target;
 		if( src.id == "personality" || src.parentElement.id == "personality"){//跳转到个人资料页面
 			window.location = "personality.html";
 		}
@@ -166,8 +169,8 @@ function meHref  (e) {//'我'页面导航
 			window.location = "search.html";
 		}
 }
-function findHref  (e) {//'发现'页面导航
-		var src = e.target;
+function findHref  (event) {//'发现'页面导航
+		var src = event.target;
 		if( src.id == "friendCircle" || src.parentElement.id == "friendCircle"){//跳转到朋友圈页面
 			window.location = "friendCircle.html";
 		}

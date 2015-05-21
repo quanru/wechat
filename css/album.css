@@ -1,21 +1,6 @@
 #wrap {
     background: #000;
 }
-#gobackBtn {
-    float: left;
-    padding: 12px 12px 13px 20px;
-}
-#toolBar h4 {
-    font-weight: normal;
-    line-height: 50px;
-    display: inline;
-    margin-left: 8px;
-    color: #fff;
-}
-#messageBtn {
-    float: right;
-    padding: 10px 20px 15px 20px;
-}
 #myAlbum{
     overflow: scroll;
     overflow-x: hidden;
@@ -75,17 +60,4 @@
     width: 80px;
     height: 80px;
     margin-right: 10px;
-}
-#shade {
-    position: absolute;
-    bottom: 0;
-    display: none;
-    width: 480px;
-    height: 100%;
-    background: #000;
-}
-#zoomImg {
-    position: absolute;
-    top: 150px;
-    left: 0;
 }

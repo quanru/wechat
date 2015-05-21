@@ -1,13 +1,3 @@
-#toolBar h4 {
-    font-weight: normal;
-    line-height: 50px;
-    display: inline;
-    color: #fff;
-}
-#toolBar img {
-    float: left;
-    padding: 12px 20px;
-}
 #settingList h5 {
     font-size: 18px;
     text-indent: 20px;

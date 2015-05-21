@@ -1,21 +1,6 @@
 #wrap {
     background: #282C2D;
 }
-#gobackBtn {
-    float: left;
-    padding: 12px 12px 13px 20px;
-}
-#toolBar h4 {
-    font-weight: normal;
-    line-height: 50px;
-    display: inline;
-    margin-left: 8px;
-    color: #fff;
-}
-#settingBtn {
-    float: right;
-    padding: 10px 20px 15px 20px;
-}
 #botBar {
     position: absolute;
     bottom: 0;

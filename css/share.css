@@ -10,25 +10,19 @@ body{
     background: #ebebeb;
     overflow: hidden;
 }
+/*
+状态栏样式
+ */
 #statusBar {
     height: 25px;
     background: #000;
 }
-#toolBar {
-    height: 50px;
-    background: #212a2a;
-}
-#toolBar h3 {
-    font-size: 25px;
-    font-weight: normal;
-    line-height: 50px;
-    display: inline;
-    margin-left: 20px;
-    color: #fff;
-}
 a {
     color: #000;
 }
+/*
+底栏样式
+ */
 #bottomBar {
     position: absolute;
     bottom: 0;
@@ -50,3 +44,98 @@ a {
 #bottomBar img{
     padding: 0 40px;
 }
+/*
+弹出背景黑框
+ */
+#shade {
+    position: absolute;
+    bottom: 0;
+    display: none;
+    width: 480px;
+    height: 100%;
+    background: #000;
+}
+#shade img {
+    position: absolute;
+    top: 150px;
+    left: 0;
+}
+/*
+toolBar字体样式以及各种按钮
+ */
+ #toolBar {
+     height: 50px;
+     background: #212a2a;
+ }
+ #toolBar h3 {
+     font-size: 25px;
+     font-weight: normal;
+     line-height: 50px;
+     display: inline;
+     margin-left: 20px;
+     color: #fff;
+ }
+#toolBar h4 {
+    font-weight: normal;
+    line-height: 50px;
+    display: inline;
+    margin-left: 8px;
+    color: #fff;
+}
+.topRightBtn{
+    cursor: pointer;
+    float: right;
+    padding: 10px 20px 15px 20px;
+}
+#gobackBtn {
+    float: left;
+    cursor: pointer;
+    padding: 12px 12px 13px 20px;
+}
+/*
+弹出菜单样式
+ */
+ #slideMenu{
+     position: absolute;
+     top: 70px;
+     right: 15px;
+     background: #21292B;
+     color: #fff;
+     display: none;
+ }
+ #slideMenu li{
+     width: 220px;
+     height: 50px;
+     line-height: 50px;
+     text-indent: 15px;
+ }
+ #slideMenu li img{
+     padding: 10px  0  10px 15px;
+     float: left;
+ }
+/*
+弹出阴影样式
+ */
+ #popMenu {
+     position: absolute;
+     top: 250px;
+     left: 65px;
+     display: none;
+     width: 350px;
+     background: #fff;
+ }
+ #popMenu h1 {
+     font-size: 27px;
+     line-height: 70px;
+     height: 70px;
+     padding: 0 25px;
+     color: #5ca942;
+     border-bottom: 2px solid #eee;
+ }
+ #popMenu li {
+     font-size: 20px;
+     line-height: 50px;
+     height: 50px;
+     text-indent: 25px;
+     border-bottom: 1px solid #eee;
+ }

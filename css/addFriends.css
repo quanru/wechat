@@ -1,16 +1,6 @@
 #wrap {
     background: #ebebeb;
 }
-#gobackBtn {
-    float: left;
-    padding: 12px 12px 13px 20px;
-}
-#toolBar h4 {
-    font-weight: normal;
-    line-height: 50px;
-    margin-left: 8px;
-    color: #fff;
-}
 #xdpy {
     font-size: 22px;
     float: left;
@@ -19,18 +9,6 @@
     font-size: 20px;
     float: right;
     margin-right: 20px;
-}
-#searchBox {
-    position: relative;
-    top: 15px;
-    height: 50px;
-    border-bottom: 1px solid #eee;
-    background: #fff;
-}
-#searchBox img {
-    position: absolute;
-    bottom: 5px;
-    left: 20px;
 }
 #inputSearch {
     font-size: 25px;
@@ -62,7 +40,19 @@
     text-align: center;
     color: #bababa;
 }
-h6 {
+#searchBox {
+    position: relative;
+    top: 15px;
+    height: 50px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+#searchBox img {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+}
+#searchBox h6 {
     font-weight: normal;
     position: relative;
     top: 30px;

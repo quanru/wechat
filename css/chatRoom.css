@@ -1,22 +1,6 @@
 #wrap {
     background: #ebebeb;
 }
-#toolBar h4 {
-    font-weight: normal;
-    line-height: 50px;
-    display: inline;
-    margin-left: 8px;
-    color: #fff;
-}
-#gobackBtn {
-    float: left;
-    padding: 12px 12px 13px 20px;
-}
-#personBtn {
-    float: right;
-    padding: 12px 20px 13px 20px;
-    cursor: pointer;
-}
 #words li{
     background: #B1E866;
     width: 200px;
