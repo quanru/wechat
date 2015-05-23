@@ -1,12 +1,12 @@
 $(function  () {
-	$("#gobackBtn, #personBtn").bind("mousedown", backgroundColor1);//点返回加与个人资料按钮后变色
-	$("#gobackBtn").bind("click", goBack);//返回按钮
+	$("#gobackBtn, #personBtn").bind("mousedown touchstart", backgroundColor1);//点返回加与个人资料按钮后变色
+	$("#gobackBtn").bind("click touchend", goBack);//返回按钮
 	var search = window.location.search.split('&'),
 		userName = decodeURIComponent(search[0].substring(10)),
 		imgSrc = decodeURIComponent(search[1].substring(8)),
 		wordsNum = 3;//聊天信息起始索引
 	$("#userName").html(userName);
-	$("#personBtn").bind("click", function  (event) {
+	$("#personBtn").bind("click touchend", function  (event) {
 		var url = "person.html?userName=" + encodeURIComponent(userName) + "&imgSrc=" + encodeURIComponent('.' + imgSrc) ; 
 		window.location = url;
 	});

@@ -1,7 +1,7 @@
 $(function(){
-    $("#gobackBtn, #messageBtn").bind("mousedown", backgroundColor1);//点返回加与个人资料按钮后变色
-    $("#gobackBtn, #messageBtn").bind("mouseup", "#212A2A", backgroundColor2);//还原颜色
-    $("#gobackBtn").bind("click", goBack);//返回按钮
+    $("#gobackBtn, #messageBtn").bind("mousedown touchstart", backgroundColor1);//点返回加与个人资料按钮后变色
+    $("#gobackBtn, #messageBtn").bind("mouseup touchend", "#212A2A", backgroundColor2);//还原颜色
+    $("#gobackBtn").bind("click touchend", goBack);//返回按钮
     var isClick = false, //判断是否单击
             isMove = false,//判断单击后是否移动
             iY;//标记单击时鼠标纵坐标位置

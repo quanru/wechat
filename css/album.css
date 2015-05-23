@@ -12,18 +12,18 @@
 #banner{
     position: relative;
 }
-#userBox {
+#headBox {
     position: absolute;
     right: 20px;
     bottom: -30px;
 }
-#userBox img {
+#headBox img {
     width: 70px;
     height: 70px;
     border: 5px solid #F7F7F7;
     margin-left: 15px;
 }
-#userBox h5 {
+#headBox h5 {
     float: left;
     display: inline;
     line-height: 60px;

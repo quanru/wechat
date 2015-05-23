@@ -83,7 +83,7 @@ toolBar字体样式以及各种按钮
 }
 #shade img {
     position: absolute;
-    top: 150px;
+    top: 20%;
     left: 0;
 }
 /*
@@ -91,7 +91,7 @@ toolBar字体样式以及各种按钮
  */
  #popMenu {
      position: absolute;
-     top: 250px;
+     top: 30%;
      left: 14%;
      display: none;
      width: 73%;
@@ -150,10 +150,8 @@ toolBar字体样式以及各种按钮
      background: #fff;
  }
  .barCol img {
-     position: relative;
-     top: 10px;
      float: left;
-     padding: 0 30px;
+     padding: 10px 30px;
  }
  .barCol h5 {
      font-size: 20px;

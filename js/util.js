@@ -10,7 +10,7 @@ function backgroundColor1 (event) {//设置背景色为#F2777A
 }
 function backgroundColor2 (event) {//设置背景色为event.data
 	var src = event.target;
-	if(src.className == "nav"){
+	if(src.className == "gap"){
 		return;
 	}
 	if(src.parentElement.nodeName == "LI" || src.className == "unChange"){
@@ -42,19 +42,24 @@ function longClick (event) {//长按弹出菜单
 }
 function getOut (event) {//退出长按菜单
 	var srcEle = event.target;
-	if( srcEle.id != "shade" )
+	if( srcEle.id != "shade" ){
 		return;
+	}
 	$("#popMenu").fadeOut("slow");
 	$("#shade").fadeOut("slow");
 }
 function enterChat (event) {//进入聊天页面
+	window.location.reload();//Firefox与移动端进入聊天页面后返回，不刷新页面，此处刷新
 	var srcEle = event.target;
-	if( srcEle.nodeName != "LI" )
+	if( srcEle.nodeName != "LI" ){
 		srcEle = srcEle.parentElement;
-		var url = "chatRoom.html?userName=" + encodeURIComponent($(srcEle).find(".user").html()) + "&imgSrc=" + encodeURIComponent($(srcEle).find("img").attr('src')) ; 
+	}
+	var url = "chatRoom.html?userName=" + encodeURIComponent($(srcEle).find(".user").html()) + "&imgSrc=" + encodeURIComponent($(srcEle).find("img").attr('src')) ; 
 	window.location = url;
+
 }
 function enterPerson (event) {//进入个人资料卡页面
+	window.location.reload();//Firefox与移动端进入聊天页面后返回，不刷新页面，此处刷新
 	clearTimeout(timeout);
 	var srcEle = event.target;
 	if( srcEle.nodeName != "LI" )

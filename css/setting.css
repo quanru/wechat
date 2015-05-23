@@ -2,7 +2,14 @@
     font-size: 18px;
     text-indent: 20px;
 }
+#settingList h4 {
+	font-weight: normal;
+	float: right;
+	height: 50px;
+	line-height: 50px;
+	margin-right: 15px;
+}
 .barCol img {
     float: right;
-    padding-top: 2px;
+    padding: 13px 0;
 }
