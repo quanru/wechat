@@ -1,27 +1,25 @@
 #wrap {
     background: #282C2D;
 }
-#botBar {
+#shakeBar {
     position: absolute;
     bottom: 0;
     height: 90px;
-    background: #282C2D;
-    width: 480px;
+    width: 100%;
 }
-#botBar div {
-    float: left;
-    padding: 19px 58px;
-}
-#botBar p {
-    font-size: 14px;
+#shakeBar img {
     width: 40px;
+    height: 40px;
+    padding: 0 58px;
+}
+#shakeBar div {
+    float: left;
+}
+#shakeBar p {
+    font-size: 14px;
+    width: 156px;
     text-align: center;
     color: #bababa;
-}
-#botBar div:last-child p {
-    width: 50px;
-}
-#middleFrame{
 }
 #shakeImg{
     margin: 30% auto 0 auto;

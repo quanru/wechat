@@ -6,7 +6,7 @@
     bottom: 0;
     height: 90px;
     background: #131510;
-    width: 480px;
+    width: 100%;
 }
 #botBar div {
     display: block;
@@ -19,6 +19,10 @@
     text-align: center;
     color: #bababa;
 }
+#middleFrame {
+    width: 100%;
+    height: 480px;
+}
 #middleFrame h2{
     text-align: center;
     color: #B1B1B1;
@@ -26,8 +30,8 @@
     font-weight: normal;
 }
 #scanFrame{
-    width: 220px;
-    height: 200px;
+    width: 45%;
+    height: 40%;
     margin: 20% auto 0 auto;
     position: relative;
     background: #A3A69B;

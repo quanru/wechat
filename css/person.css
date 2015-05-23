@@ -4,53 +4,35 @@
 #personList {
     margin-bottom: 40px;
 }
-li.user {
+.user {
     height: 50px;
     border-bottom: 1px solid #f0f0f0;
     background: #fff;
 }
-.user img {
-    position: relative;
-    top: 10px;
-    float: left;
-    padding: 0 10px;
-}
-h5.person {
+.person {
     font-size: 20px;
     font-weight: normal;
     line-height: 50px;
-    float: left;
 }
 #userBox {
-    position: relative;
+    background: #ebebeb;
     height: 110px;
 }
-#userBox h4, h6 {
+#userBox h4, #userBox h6 {
     font-size: 15px;
     font-weight: normal;
-    margin-bottom: 3px;
     color: #a7a7a7;
 }
-#userBox h4 {
-    position: absolute;
-    top: 50px;
-    left: 90px;
-}
-#userBox h6 {
-    position: absolute;
-    top: 70px;
-    left: 90px;
+#userBox h5 {
+    font-size: 20px;
+    line-height: 40px;
+    padding-top: 5px;
 }
 #userBox img {
-    top: 20px;
+    float: left;
+    padding: 10px;
     width: 70px;
     height: 70px;
-}
-#userBox h5 {
-    line-height: 90px;
-    position: relative;
-    top: -15px;
-    height: 90px;
 }
 #personList h5 {
     font-size: 18px;
@@ -65,8 +47,15 @@ h5.person {
 }
 #personAlbum h5 {
     line-height: 100px;
+    margin-right: 20px;
+    float: left;
+}
+#personAlbum div{
+    position: absolute;
+    left: 120px;
 }
 #personAlbum img{
+    padding: 10px 0;
     height: 80px;
     width: 80px;
 }
@@ -74,13 +63,13 @@ h5.person {
     color: #596d90;
 }
 #personSNS span img {
-    padding-top: 3px;
+    padding: 12px 0;
 }
 #sendBtn, #visionChat {
     line-height: 55px;
-    width: 430px;
+    width: 90%;
     height: 55px;
-    margin: 20px 25px;
+    margin: 20px 5%;
     text-align: center;
     border-radius: 3px;
 }

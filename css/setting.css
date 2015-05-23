@@ -2,65 +2,7 @@
     font-size: 18px;
     text-indent: 20px;
 }
-li.setting {
-    height: 50px;
-    border-bottom: 1px solid #f0f0f0;
-    background: #fff;
-}
-.setting img {
-    position: relative;
-    top: 10px;
+.barCol img {
     float: right;
     padding-top: 2px;
-}
-.setting h4{
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 50px;
-    float: right;
-    margin-right: 20px;
-}
-h5.person {
-    font-size: 20px;
-    font-weight: normal;
-    line-height: 50px;
-    float: left;
-}
-#userName {
-    height: 90px;
-}
-#userName h6 {
-    font-size: 15px;
-    font-weight: normal;
-    position: relative;
-    top: 55px;
-    left: -50px;
-    color: #a7a7a7;
-}
-#userName img {
-    float: right;
-    top: 20px;
-    width: 53px;
-    height: 53px;
-    margin-right: 10px;
-}
-#userName h5 {
-    line-height: 90px;
-    height: 90px;
-}
-#twoDContact img {
-    float: right;
-    top: 13px;
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-
-}
-li.gap {
-    line-height: 25px;
-    width: 480px;
-    height: 25px;
-    text-indent: 20px;
-    color: #868686;
-    background: #ebebeb;
 }

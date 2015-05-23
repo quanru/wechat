@@ -1,0 +1,436 @@
+ /*
+ 针对不同分辨率适配
+  */
+@media screen and (max-width: 550px){
+    body{
+        width: 100%;
+    }
+    #wrap {
+        width: 100%;
+        left: 0;
+    }
+    #bottomBar div {
+        padding: 3px 7%;
+    }
+    /*
+    状态栏
+     */
+    h5.user {
+        font-size: 15px;
+    }
+    p.date {
+        font-size: 9px;
+    }
+    p.preview {
+        font-size: 11px;
+    }
+    /*
+    朋友圈横幅
+     */
+    #bannerImg{
+        width: 100%;
+    }
+    /*
+    聊天室聊天记录框与输入框
+     */
+    #words li{
+        width: 30%;
+        left: 40%;
+    }
+    #inputBar input{
+        width: 61%;
+    }
+    .user {
+        height: 30px;
+    }
+    .person {
+        line-height: 30px;
+    }
+    /*
+    person页面
+     */
+    #personList h5 {
+        font-size: 15px;
+    }
+    #personAlbum {
+        height: 80px;
+    }
+    #personAlbum h5 {
+        line-height: 80px;
+    }
+    #personAlbum img{
+        height: 60px;
+        width: 60px;
+    }
+    #personSNS img {
+        width: 20px;
+        height: 20px;
+    }
+    #personSNS span img {
+        padding: 7px 0;
+    }
+    /*
+    摇一摇
+     */
+    #botBar div {
+        padding: 19px 30px;
+    }
+    #shakeBar {
+        height: 80px;
+    }
+    #shakeBar img {
+        width: 35px;
+        height: 35px;
+        padding: 0 45px;
+    }
+    #shakeBar p{
+        width: 125px;
+    }
+    /*
+    公共LI
+     */
+    .col a {
+        padding: 25px 0;
+    }
+    .col img{
+        padding: 0 45px;
+    }
+    .col p {
+        font-size: 15px;
+        width: 130px;
+    }
+    .col2 a {
+        padding: 25px 0;
+    }
+    .col2 img{
+        padding: 0 50px;
+    }
+    .col2 p {
+        font-size: 15px;
+        width: 130px;
+    }
+    /*
+    搜索页面
+     */
+    #inputSearch {
+        font-size: 20px;
+        width: 230px;
+    }
+    #voiceBtn {
+        float: right;
+        padding: 12px 5px 5px 5px;
+        border-bottom: 2px solid #4f8643;
+    }
+    #tipIcons a {
+        float: left;
+        margin: 30px 2.9%;
+    }
+    #tipIcons p {
+        font-size: 10px;
+        width: 40px;
+    }
+    /*
+    通讯录页面
+     */
+    #a-z {
+        font-size: 15px;
+    }
+    #a-z li {
+        width: 18px;
+        height: 18px;
+    }
+    #inputBar input {
+        padding-top: 15px;
+        width: 60%;
+    }
+    #voiceBtn{
+        float: left;
+    }
+}
+@media screen and (max-width: 320px) and (max-height: 600px){
+    #bottomBar div {
+        padding: 3px 6%;
+    }
+    /*
+    状态栏
+     */
+    h5.user {
+        font-size: 13px;
+    }
+    p.date {
+        font-size: 7px;
+    }
+    p.preview {
+        font-size: 9px;
+    }
+    /*
+    聊天室页面
+     */
+    #words li{
+        width: 30%;
+        left: 35%;
+    }
+    #inputBar input{
+        width: 50%;
+    }
+    .user {
+        height: 25px;
+    }
+    .person {
+        line-height: 25px;
+    }
+    /*
+    包裹用户的盒子
+     */
+    #userBox {
+        background: #ebebeb;
+        height: 100px;
+    }
+    #userBox h5 {
+        font-size: 15px;
+        line-height: 30px;
+    }
+    #userBox img {
+        width: 60px;
+        height: 60px;
+    }
+    /*
+    person页面
+     */
+    #personAlbum {
+        height: 60px;
+    }
+    #personAlbum h5 {
+        line-height: 60px;
+    }
+    #personAlbum img{
+        height: 40px;
+        width: 40px;
+    }
+    #personSNS img {
+        width: 15px;
+        height: 15px;
+    }
+    #personSNS span img {
+        padding: 5px 0;
+    }
+    #sendBtn, #visionChat {
+        line-height: 35px;
+        height: 35px;
+        margin: 10px 5%;
+    }
+    /*
+    扫一扫
+     */
+    #botBar div {
+        padding: 19px 20px;
+    }
+    #scanFrame{
+        margin-top: 20px;
+    }
+    /*
+    摇一摇
+     */
+    #shakeBar {
+        height: 70px;
+    }
+    #shakeBar img {
+        width: 30px;
+        height: 30px;
+        padding: 0 38px;
+    }
+    #shakeBar p{
+        width: 106px;
+    }
+    /*
+    公共LI
+     */
+    .col {
+        top: 65px;
+    }
+    .col a {
+        padding: 25px 0;
+    }
+    .col img{
+        padding: 0 31px;
+    }
+    .col p {
+        font-size: 15px;
+        width: 100px;
+    }
+    .col2 a {
+        padding: 25px 0px;
+    }
+    .col2 img{
+        padding: 0 36px;
+    }
+    .col2 p {
+        font-size: 10px;
+        width: 100px;
+    }
+    /*
+    搜索页面
+     */
+    #inputSearch {
+        font-size: 20px;
+        width: 175px;
+    }
+    #tipIcons a {
+        float: left;
+        margin: 30px 1%;
+    }
+    #tipIcons p {
+        font-size: 10px;
+        width: 40px;
+    }
+    /*
+    通讯录页面
+     */
+    #a-z {
+        font-size: 15px;
+    }
+    #a-z li {
+        width: 15px;
+        height: 15px;
+    }
+     /*
+    发现与我页面的li样式
+     */
+    .barCol {
+        height: 40px;
+    }
+    .barCol img {
+        width: 20px;
+        height: 20px;
+    }
+    .barCol h5 {
+        font-size: 15px;
+        line-height: 40px;
+        height: 40px;
+    }
+    /*
+    间隙
+     */
+    .gap {
+        height: 15px;
+        font-size: 15px;
+        line-height: 15px;
+    }
+    /*
+    个人资料页面
+     */
+    #personality {
+        height: 75px;
+        cursor: pointer;
+        background: #fff;
+    }
+    #personality h6 {
+        font-size: 13px;
+    }
+    #personality img {
+        float: left;
+        width: 45px;
+        height: 45px;
+        padding: 15px;
+    }
+    #personality h5 {
+        font-size: 15px;
+        font-weight: normal;
+        padding: 20px 0 5px 0;
+    }
+    #personalityDetails h5 {
+        font-size: 15px;
+    }
+    #userName {
+        height: 75px;
+    }
+    #userName h5 {
+        line-height: 75px;
+    }
+    #userName img {
+        width: 45px;
+        height: 45px;
+        padding: 15px;
+    }
+    #twoDContact img {
+        float: right;
+        width: 20px;
+        height: 20px;
+        padding: 8px 20px;
+        top: 0;
+    }
+    #settingList h5 {
+        font-size: 15px;
+    }
+    /*
+    toolBar字体样式以及各种按钮
+     */
+      #toolBar {
+          height: 40px;
+      }
+      #toolBar h3, #toolBar h4 {
+         line-height: 40px;
+      }
+      #toolBar h3 {
+          font-size: 20px;
+      }
+    .topRightBtn{
+        padding: 5px 20px 10px 20px;
+    }
+    #gobackBtn {
+        padding: 7px 12px 8px 20px;
+    }
+    #toolBar h4 {
+        font-size: 15px;
+    }
+    #toolBar h5 {
+        font-size: 10px;
+    }
+    #bottomBar p {
+        font-size: 0.5em;
+    }
+    /*
+    已登录设备横幅
+     */
+    #subBar {
+        height: 40px;
+    }
+    #subBar h6 {
+        font-size: 15px;
+        line-height: 40px;
+    }
+    #pc {
+        margin: 6px 20px;
+    }
+    #ring {
+        margin: 0 10px;
+    }
+    /*
+    弹出菜单样式
+     */
+     #slideMenu{
+         top: 60px;
+         right: 10px;
+     }
+     #slideMenu li{
+         width: 200px;
+         height: 40px;
+         line-height: 40px;
+         text-indent: 10px;
+         font-size: 15px;
+     }
+     #slideMenu li img{
+         padding: 10px  0  10px 15px;
+        width: 20px;
+        height: 20px;
+     }
+     #slideMenu li:last-child img{
+         width: 25px;
+         height: 25px;
+     }
+     #slideMenu li:last-child{
+         height: 45px;
+         line-height: 45px;
+     }
+
+}

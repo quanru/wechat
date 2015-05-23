@@ -1,6 +1,9 @@
 #wrap {
     background: #fff;
 }
+#main{
+    width: 100%;
+}
 #searchIcon {
     float: left;
     padding: 12px 5px 5px 0;
@@ -17,7 +20,7 @@
     outline: medium;
     background: #212a2a;
 }
-#voiceBtn {
+#searchVoiceBtn {
     float: right;
     padding: 12px 20px 5px 20px;
     border-bottom: 2px solid #4f8643;
@@ -29,14 +32,14 @@
     color: #a9a9a9;
 }
 #tipIcons {
-    width: 480px;
+    width: 100%;
+    width: 62.5%;
     height: 65px;
-    margin-left: 90px;
+    margin: 0 auto;
 }
 #tipIcons a {
     float: left;
-    width: 45px;
-    margin: 30px 15px;
+    margin: 30px 5%;
 }
 #tipIcons p {
     font-size: 12px;

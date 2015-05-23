@@ -7,7 +7,6 @@ body{
     width: 480px;
     bottom: 0;
     top: 0;
-    background: #ebebeb;
     overflow: hidden;
 }
 /*
@@ -21,66 +20,24 @@ a {
     color: #000;
 }
 /*
-底栏样式
- */
-#bottomBar {
-    position: absolute;
-    bottom: 0;
-    height: 55px;
-    border-top: 1px solid #f0f0f0;
-    background: #fff;
-    width: 480px;
-}
-#bottomBar div {
-    display: block;
-    float: left;
-    padding: 3px 0;
-}
-#bottomBar p {
-    font-size: 12px;
-    text-align: center;
-    color: #bababa;
-}
-#bottomBar img{
-    padding: 0 40px;
-}
-/*
-弹出背景黑框
- */
-#shade {
-    position: absolute;
-    bottom: 0;
-    display: none;
-    width: 480px;
-    height: 100%;
-    background: #000;
-}
-#shade img {
-    position: absolute;
-    top: 150px;
-    left: 0;
-}
-/*
 toolBar字体样式以及各种按钮
  */
  #toolBar {
      height: 50px;
      background: #212a2a;
  }
- #toolBar h3 {
-     font-size: 25px;
-     font-weight: normal;
-     line-height: 50px;
-     display: inline;
-     margin-left: 20px;
-     color: #fff;
- }
-#toolBar h4 {
+ #toolBar h3, #toolBar h4 {
     font-weight: normal;
     line-height: 50px;
     display: inline;
-    margin-left: 8px;
     color: #fff;
+ }
+ #toolBar h3 {
+     font-size: 25px;
+     margin-left: 20px;
+ }
+#toolBar h4 {
+    margin-left: 8px;
 }
 .topRightBtn{
     cursor: pointer;
@@ -92,6 +49,69 @@ toolBar字体样式以及各种按钮
     cursor: pointer;
     padding: 12px 12px 13px 20px;
 }
+/*
+底栏样式
+ */
+#bottomBar {
+    position: absolute;
+    bottom: 0;
+    height: 55px;
+    border-top: 1px solid #f0f0f0;
+    background: #fff;
+    width: 100%;
+}
+#bottomBar div {
+    display: block;
+    float: left;
+    padding: 3px 40px;
+}
+#bottomBar p {
+    font-size: 0.5em;
+    text-align: center;
+    color: #bababa;
+}
+/*
+弹出背景黑框
+ */
+#shade {
+    position: absolute;
+    bottom: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+#shade img {
+    position: absolute;
+    top: 150px;
+    left: 0;
+}
+/*
+弹出阴影样式
+ */
+ #popMenu {
+     position: absolute;
+     top: 250px;
+     left: 14%;
+     display: none;
+     width: 73%;
+     background: #fff;
+ }
+ #popMenu h1 {
+     font-size: 27px;
+     line-height: 70px;
+     height: 70px;
+     padding: 0 25px;
+     color: #5ca942;
+     border-bottom: 2px solid #eee;
+ }
+ #popMenu li {
+     font-size: 20px;
+     line-height: 50px;
+     height: 50px;
+     text-indent: 25px;
+     border-bottom: 1px solid #eee;
+ }
 /*
 弹出菜单样式
  */
@@ -114,28 +134,30 @@ toolBar字体样式以及各种按钮
      float: left;
  }
 /*
-弹出阴影样式
+间隙样式
  */
- #popMenu {
-     position: absolute;
-     top: 250px;
-     left: 65px;
-     display: none;
-     width: 350px;
+ .gap {
+     height: 25px;
+     color: #868686;
+     background: #ebebeb;
+ }
+ /*
+ 发现与我页面的li样式
+  */
+ .barCol {
+     height: 50px;
+     border-bottom: 1px solid #f0f0f0;
      background: #fff;
  }
- #popMenu h1 {
-     font-size: 27px;
-     line-height: 70px;
-     height: 70px;
-     padding: 0 25px;
-     color: #5ca942;
-     border-bottom: 2px solid #eee;
+ .barCol img {
+     position: relative;
+     top: 10px;
+     float: left;
+     padding: 0 30px;
  }
- #popMenu li {
+ .barCol h5 {
      font-size: 20px;
+     font-weight: normal;
      line-height: 50px;
-     height: 50px;
-     text-indent: 25px;
-     border-bottom: 1px solid #eee;
+     float: left;
  }

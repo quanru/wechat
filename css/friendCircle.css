@@ -14,10 +14,13 @@
     position: absolute;
     z-index: 2;
 }
-#userBox {
+#banner{
     position: relative;
-    left: 330px;
-    top: -50px;
+}
+#userBox {
+    position: absolute;
+    right: 20px;
+    bottom: -30px;
 }
 #userBox img {
     width: 70px;
@@ -36,7 +39,7 @@
 #friendUpdate li{
     border-bottom: 2px solid #eee;
     padding-top: 15px;
-    width: 480px;
+    width: 100%;
     height: 300px;
     position: relative;
 }
@@ -69,3 +72,4 @@
     margin-left: 25px;
     margin-right: 10px;
 }
+

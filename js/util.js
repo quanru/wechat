@@ -65,7 +65,8 @@ function enterPerson (event) {//进入个人资料卡页面
 	window.location = url;
 }
 function zoomIn (event) {//放大图片
-    var srcEle = event.target;
+    var srcEle = event.target,
+    		imgWidth = $("body").css('width');//当前body宽度，作为为参照
     if(!$(srcEle).hasClass('zoomAble')){//如果该图片为不可放大的类，则返回
     	return;
     }
@@ -73,8 +74,8 @@ function zoomIn (event) {//放大图片
     img.appendTo($("#shade"));
     img.attr('id', 'zoomImg');
     img.animate({
-        width:'480px',
-        height:'480px'
+        width: imgWidth,
+        height: imgWidth
     });
     $("#shade").css("display", "block");
 }
@@ -104,7 +105,7 @@ function enterAlbum (event) {//进入相册
 }
 function changeShake (event) {//切换摇一摇目标
 	var src = event.target,
-		srcParent = $("#botBar img");
+		srcParent = $("#shakeBar img");
 	if(src.nodeName != "IMG"){
 		return;
 	}
@@ -113,6 +114,39 @@ function changeShake (event) {//切换摇一摇目标
 	});
 	src.setAttribute("src", './img/' + src.id + '2.jpg');
 	$("#toolBar h4").html(src.getAttribute('alt'));
+}
+function cycleScan () { //循环扫描二维码动画
+	$("#scrollBar").css("bottom", "100%");
+	$("#scrollBar").animate({bottom:'0'}, 1500, cycleScan);
+}
+function changeImg (e) {//点击改变扫描框大小
+	var src = e.target,
+		srcParent = $("#botBar img");
+	if(src.nodeName != "IMG"){
+		return;
+	}
+	srcParent.each(function  () {
+		this.setAttribute("src", './img/' + this.id + '.jpg');
+	});
+	$("#scrollBar").show();
+	switch(src.id){
+		case '2Dcode':
+			$("#scanFrame").animate({width:'45%', height:0.4*480}, 1500);
+			break;
+		case 'cover':
+		case 'street':
+			$("#scanFrame").animate({width:'60%', height:0.65*480}, 1500);
+			break;
+		case 'translate':
+			$("#scanFrame").animate({width:'40%', height:0.1*480}, 1500);
+			$("#scrollBar").hide();
+			break;
+		default:
+			break;
+	}
+	src.setAttribute("src", './img/' + src.id + '2.jpg');
+	$("#toolBar h4").html(src.getAttribute('alt'));
+	$("#middleFrame h2").html(src.getAttribute('tip'));
 }
 function slideMenu (event) {//弹出菜单
 	$("#slideMenu").slideToggle("slow");

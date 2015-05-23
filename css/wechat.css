@@ -12,7 +12,7 @@
 #subBar h6 {
     font-size: 17px;
     line-height: 55px;
-    display: inline;
+    float: left;
     color: #dfdfdf;
 }
 #pc {

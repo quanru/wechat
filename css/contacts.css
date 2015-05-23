@@ -5,7 +5,7 @@
     padding: 9px 15px;
     border-bottom: 1px solid #f0f0f0;
 }
-h5.user {
+.user {
     font-size: 20px;
     font-weight: normal;
     position: relative;
@@ -13,20 +13,17 @@ h5.user {
     display: inline;
     height: 55px;
 }
-li.nav {
-    line-height: 25px;
+.gap {
+    font-size: 20px;
     width: 480px;
-    height: 25px;
     text-indent: 20px;
-    color: #868686;
-    background: #ebebeb;
 }
-li.friends, li.friend {
+.friends, .friend {
     height: 55px;
     padding: 15px 15px 0 15px;
     border-bottom: 1px solid #f0f0f0;
 }
-li.friends img, li.friend img {
+.friends img, .friend img {
     width: 42px;
     height: 42px;
 }
