@@ -1,5 +1,4 @@
 var srcEle;//保存被长按的元素
-	,isMove;
 $(function  () {
 	$("#toolBar, #slideMenu").bind("mousedown touchstart", backgroundColor1);//点击添加与搜索按钮后变色
 	$("#popMenu, #newFriends").bind("mousedown touchstart", "#D6D6D6", backgroundColor2);//点击变色

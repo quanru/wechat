@@ -53,9 +53,11 @@
     padding: 10px;
 }
 #biaoqing{
-    padding: 15px 10px 1px 0;
+    padding: 15px 10px 4px 0;
     border-bottom: 2px solid #4f8643;
     float: right;
+    height: 25px;
+    width: 25px;
 }
 #gengduo{
     float: right;

@@ -28,16 +28,16 @@
     height: 42px;
 }
 #a-z {
-    font-size: 15px;
     position: absolute;
     top: 80px;
     right: 5px;
     text-align: center;
     background: #fff;
+    height: 80%;
+    font-size: 1em;
 }
 #a-z li {
-    width: 20px;
-    height: 20px;
+    height:3.5%;
 }
 #contactsList {
     overflow: scroll;
