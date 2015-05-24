@@ -116,7 +116,7 @@
         font-size: 20px;
         width: 230px;
     }
-    #voiceBtn {
+    #searchVoiceBtn {
         float: right;
         padding: 12px 5px 5px 5px;
         border-bottom: 2px solid #4f8643;
@@ -272,21 +272,6 @@
         width: 100px;
     }
     /*
-    搜索页面
-     */
-    #inputSearch {
-        font-size: 20px;
-        width: 175px;
-    }
-    #tipIcons a {
-        float: left;
-        margin: 30px 1%;
-    }
-    #tipIcons p {
-        font-size: 10px;
-        width: 40px;
-    }
-    /*
     通讯录页面
      */
     #a-z {
@@ -393,7 +378,7 @@
       #toolBar h3 {
           font-size: 20px;
       }
-    .topRightBtn{
+      #toolBar img{
         padding: 5px 20px 10px 20px;
     }
     #gobackBtn {
@@ -471,5 +456,28 @@
     p.preview {
         font-size: 10px;
         top: -30px;
+    }
+    /*
+    搜索页面
+     */
+    #inputSearch {
+        font-size: 20px;
+        width: 170px;
+        height: 31px;
+        line-height: 36px;
+    }
+    img#searchIcon{
+        padding: 3px 0;
+    }
+    img#searchVoiceBtn {
+        padding: 6px 5px 0px 5px;
+    }
+    #tipIcons a {
+        float: left;
+        margin: 30px 1%;
+    }
+    #tipIcons p {
+        font-size: 10px;
+        width: 40px;
     }
 }

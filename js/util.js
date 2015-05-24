@@ -120,10 +120,6 @@ function changeShake (event) {//切换摇一摇目标
 	src.setAttribute("src", './img/' + src.id + '2.jpg');
 	$("#toolBar h4").html(src.getAttribute('alt'));
 }
-function cycleScan () { //循环扫描二维码动画
-	$("#scrollBar").css("bottom", "100%");
-	$("#scrollBar").animate({bottom:'0'}, 1500, cycleScan);
-}
 function changeImg (e) {//点击改变扫描框大小
 	var src = e.target,
 		srcParent = $("#botBar img");

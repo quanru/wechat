@@ -54,9 +54,31 @@
 }
 #scrollBar{
     width: 100%;
-    bottom: 100%;
+    -webkit-animation: scan2D 1.5s infinite;
+    -o-animation: scan2D 1.5s infinite;
+    animation: scan2D 1.5s infinite;
 }
 #botBar img {
     width: 40px;
     height: 40px;
+}
+@-webkit-keyframes scan2D {
+    from {bottom:100%;}
+    to {bottom:0;}
+}
+@-moz-keyframes scan2D {
+    from {bottom:100%;}
+    to {bottom:0;}
+}
+@-ms-keyframes scan2D {
+    from {bottom:100%;}
+    to {bottom:0;}
+}
+@-o-keyframes scan2D {
+    from {bottom:100%;}
+    to {bottom:0;}
+}
+@keyframes scan2D {
+    from {bottom:100%;}
+    to {bottom:0;}
 }
